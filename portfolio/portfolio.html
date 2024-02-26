@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PORTFOLIO WEBSITE</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+   
+   <div id="header">
+       <div class="container">
+        
+        <nav>
+            <h1>RAMANA REDDY</h1>
+           
+             
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#service">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>FRONT-END DEVELOPER</p>
+            <h1>HI,I'M <span>RAMANA REDDY</span><br> FROM INDIA</h1>
+            
+        </div>
+       
+       </div>
+   </div>
+   <!-- About  -->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.png" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Doloremque, eum reiciendis ratione omnis dicta quaerat sint ea porro impedit 
+                    magni sed vel voluptatem illo minus iure, deleniti consequatur corrupti voluptate.</P>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links"  onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links"  onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active.link   active-tab" id="skills">
+                    <ul>
+                        <li><span>PYTHON</span><br>PYTHON DEVELOPER</li>
+                        <li><span>FRONT-END</span><br>WEB DEVELOPER</li>
+                        <li><span>JAVA-SCRIPT</span><br>JS DEVELOPER</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <h1>FRESHER</h1>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>10TH</span><br>SRI CHAITANYA TECHNO SCHOOL</li>
+                        <li><span>INTER-MEDIATE</span><br>SRI CHAITANYA JR.CLG</li>
+                        <li><span>B.TECH</span><br>BHARATH UNIVERSITY</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- services -->
+   <div id="service">
+    <h1 class="sub-title">My Services</h1>
+    <div class="service-list">
+        <div>
+            <i class="fa fa-code"></i>
+            <h2>Web Design</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nihil 
+                provident nisi beatae fuga impedit obcaecati? Facere doloremque</p>
+                <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa fa-code"></i>
+            <h2>Python</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nihil 
+                provident nisi beatae fuga impedit obcaecati? Facere doloremque </p>
+                <a href="#">Learn more</a>
+        </div>
+        <div>
+            <i class="fa fa-code"></i>
+            <h2>JAVA-SCRIPT</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet nihil 
+                provident nisi beatae fuga impedit obcaecati? Facere doloremque</p>
+                <a href="#">Learn more</a>
+        </div>
+
+    </div>
+   </div>
+   <!-- portfolio  -->
+   <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="web1.jpg">
+                <div class="layer">
+                    <h3>TO-DO LIST</h3>
+                    <p>This to-do list helps us to write our tasks to do in a day</p>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="web1.jpg">
+                <div class="layer">
+                    <h3>STOP WATCH</h3>
+                    <p>Stop watch timer</p>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="web1.jpg">
+                <div class="layer">
+                    <h3>AGE-CALCULATOR</h3>
+                    <p>Age calculator to calculate the age</p>
+                    <a href="#"><i class="fa fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See More</a>
+    </div>
+   </div>
+   <!-- contact -->
+   <div class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+               <h1 class="sub-title">Contact Me</h1>
+               <p><span><i class="fa fa-send"></i>contact@Example.com</span></p>
+               <p><span><i class="fa fa-phone"></i>0123456789</span></p>
+               <div class="social-icons">
+                <a href="https://facebook.com/"><i class="fa fa-facebook"></i></a>
+                <a href="https://instagram.com/"><i class="fa fa-instagram"></i></a>
+                <a href="https://twitter.com/"><i class="fa fa-twitter"></i></a>
+                <a href="https://whatsapp.com/"><i class="fa fa-whatsapp"></i></a>
+               </div>
+               <a href="ramana.jpg" download class="btn"><i class="fa fa-download"></i>Download CV</a>
+            
+           </div>
+         <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="enter your name" required autocomplete="given-name">
+                    <input type="email" name="email" placeholder="ramana@gmail.com" required autocomplete="off">
+                    <textarea name="message" rows="6" placeholder="your message" ></textarea>
+                    <button type="button" id="btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @Ramana<i class="fa fa-heart"></i></p>
+    </div>
+   </div>
+   <script>
+    var tablinks=document.getElementsByClassName('tab-links')
+    var tabcontents=document.getElementsByClassName('tab-contents')
+     function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove('active-link')
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove('active-tab')
+        }
+        event.currentTarget.classList.add('active-link')
+        document.getElementById(tabname).classList.add('active-tab')
+     }
+     var sidemenu=document.getElementById('sidemenu')
+    function openmenu(){
+        sidemenu.style.right='0'
+    }
+    function closemenu(){
+        sidemenu.style.right='-200px'
+    }
+   </script> 
+   
+</body>
+</html>
